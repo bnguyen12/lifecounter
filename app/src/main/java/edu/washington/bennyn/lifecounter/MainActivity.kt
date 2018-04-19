@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                     HPs()[button.tag as Int].text = HPs()[button.tag as Int].text.substring(0, 13) + result
 
                     if (result.toInt() <= 0) {
-                        loserText.text = HPs()[button.tag as Int].text.substring(0, 13) + "LOSES!"
+                        loserText.text = HPs()[button.tag as Int].text.substring(0, 9) + "LOSES!"
                     }
 
                     checkLosers()
